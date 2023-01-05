@@ -43,17 +43,17 @@ INSTALLED_APPS = [
     'crispy_forms',
     'easy_thumbnails',
     'django_filters',
-    'products'
     'store',
     'cart',
     'orders',
     'manage',
+    'crawl'
     
 ]
 
 LOGIN_URL = 'login'
 LOGOUT_URL = 'logout'
-LOGIN_REDIRECT_URL = 'store:product_list'
+# LOGIN_REDIRECT_URL = 'store:product_list'
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
